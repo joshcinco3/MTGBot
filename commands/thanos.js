@@ -9,13 +9,13 @@ module.exports = {
 		.addIntegerOption((option) =>
 			option
 				.setName('tnum')
-				.setDescription('Allows a user to choose a specific Thanos quote based on number (Leave blank for random quote).')
+				.setDescription('Allows user to choose a quote via number (Leave blank for random). Perhaps try some meme numbers?')
 				.setRequired(false),
 		)
 		.addStringOption((option) =>
 			option
 				.setName('tkeyword')
-				.setDescription('Allows a user to choose a specific Thanos quote based on keyword (Leave blank for random quote).')
+				.setDescription('Allows user to choose a quote via keyword (Leave blank for random quote).')
 				.setRequired(false),
 		),
 	async execute(interaction) {
