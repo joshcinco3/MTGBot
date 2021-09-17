@@ -18,7 +18,7 @@ module.exports = {
 				.setDescription('Allows user to choose a quote via keyword (Leave blank for random quote).')
 				.setRequired(false),
 		),
-	async execute(interaction) {
+	execute(interaction) {
 		let tQuoteIndex = 0;
 
 		if (!interaction.options.get('tnum') && !interaction.options.get('tkeyword')) {
@@ -48,6 +48,6 @@ module.exports = {
 			return interaction.reply('Reality is often disappointing. Looks like the quote generator failed this time. Try once more, little one.');
 		}
 
-		await interaction.reply(thanosSwitch(tQuoteIndex));
+		interaction.reply(thanosSwitch(tQuoteIndex));
 	},
 };

@@ -25,8 +25,9 @@
     "discord.js": "^13.1.0",
     "ffmpeg-static": "^4.4.0",
     "libsodium-wrappers": "^0.7.9",
+    "ms": "^3.0.0-canary.1",
     "sequelize": "^6.6.5",
-    "sqlite3": "^5.0.2",
+    "sqlite3": "^4.2.0",
     "youtube-dl-exec": "^1.2.6",
     "yt-search": "^2.10.1",
     "ytdl-core": "^4.9.1"
